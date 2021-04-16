@@ -10,4 +10,4 @@ workflows:
   welcome:
     # Run the welcome/run job in its own container
     jobs:
-      - welcome/run
+      - - run: curl -k -u $ZEROBUGUID:$ZEROBUGTOKEN --request POST -H "Content-Type:application/json" -d '{"pit":"131","targetid":"Os29QNuKcr9mUvaVS4SX1598494959","ci":"Cicle CI","tipo":"6"}' https://zerobug.co/ScanTarget/
