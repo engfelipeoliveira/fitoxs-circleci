@@ -5,5 +5,6 @@ jobs:
       - image: circleci/node:4.8.2
     steps:
       - checkout
-      - run: 
+      - run: curl -k -u $FITOXSUID:$FITOXSTOKEN --request POST -H "Content-Type:application/json" -d '{"pit":"310","targetid":"niOom8GQnyNNgKE2p3O71618970595","ci":"Circle CI","tipo":"6"}' https://fitoxs.com/ScanTarget/
+
 
